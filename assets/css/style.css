@@ -1,16 +1,22 @@
-/**
-* Template Name: DevFolio
-* Updated: May 30 2023 with Bootstrap v5.3.0
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+@font-face {
+  font-family: 'Ubuntu-Regular';
+  src: url('../Fonts/Ubuntu/Ubuntu-Regular.ttf');
+}
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
+@font-face {
+  font-family: 'Ubuntu-Medium';
+  src: url('../Fonts/Ubuntu/Ubuntu-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Ubuntu-Bold';
+  src: url('../Fonts/Ubuntu/Ubuntu-Regular.ttf');
+}
+
+
 body {
-  background-color: #f5f5f5;
+  font-family: 'Ubuntu-Regular';
+  background-color: rgb(33, 37, 41);
   color: #4e4e4e;
 }
 
@@ -159,6 +165,7 @@ a:hover {
   font-size: 3rem;
   font-weight: bold;
   text-transform: uppercase;
+  color: white;
 }
 
 .subtitle-a {
@@ -880,7 +887,7 @@ a:hover {
 
 .service-box .service-ico {
   margin-bottom: 1rem;
-  color: #1e1e1e;
+  color: rgb(33, 37, 41);
 }
 
 .service-box .ico-circle {
@@ -1446,7 +1453,7 @@ footer {
   text-align: center;
   color: #fff;
   padding: 25px 0;
-  background: #0062d3;
+  background: rgb(33, 37, 41);
 }
 
 footer .copyright {
