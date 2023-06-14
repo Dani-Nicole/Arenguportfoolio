@@ -62,22 +62,29 @@
   onscroll(document, navbarlinksActive)
 
   /**
-   * Scrolls to an element with header offset
-   */
-  const scrollto = (el) => {
-    let header = select('#header')
-    let offset = header.offsetHeight
+ * Scrolls to an element with header offset
+ */
+const scrollto = (el) => {
+  let header = select('#header');
+  let offset = header.offsetHeight;
 
-    if (!header.classList.contains('header-scrolled')) {
-      offset -= 16
-    }
-
-    let elementPos = select(el).offsetTop
-    window.scrollTo({
-      top: elementPos - offset,
-      behavior: 'smooth'
-    })
+  if (!header.classList.contains('header-scrolled')) {
+    offset -= 16;
   }
+
+  let elementPos = select(el).offsetTop;
+
+  window.scrollTo({
+    top: elementPos - offset,
+    behavior: 'smooth'
+  });
+
+  // Reset scroll behavior and timing function after scrolling
+  setTimeout(() => {
+    header.style.scrollBehavior = 'smooth';
+    header.style.transitionTimingFunction = 'ease-in-out';
+  }, 2500); // Adjust the timeout value to control the duration of the scroll effect
+};
 
   /**
    * Toggle .header-scrolled class to #header when page is scrolled
