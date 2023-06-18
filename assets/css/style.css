@@ -1088,10 +1088,12 @@ a:hover {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
+  color: white;
 }
 
 .portfolio-details .portfolio-description p {
   padding: 0;
+  color: white;
 }
 
 /*--------------------------------------------------------------
