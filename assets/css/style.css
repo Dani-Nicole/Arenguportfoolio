@@ -1034,6 +1034,7 @@ a:hover {
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
+  padding-bottom: 55px;
 }
 
 .portfolio-details .portfolio-details-slider img {
@@ -1051,6 +1052,12 @@ a:hover {
   background-color: #fff;
   opacity: 1;
   border: 1px solid rgba(224, 123, 224, 1);
+}
+
+.portfolio-details-slider h2{
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-align: center;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
@@ -1082,6 +1089,9 @@ a:hover {
 
 .portfolio-details .portfolio-description {
   padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .portfolio-details .portfolio-description h2 {
